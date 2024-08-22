@@ -1,0 +1,14 @@
+1. Start
+
+2. Read Number of Unknowns: n
+
+3. Read Augmented Matrix (A) of n by n+1 Size
+
+4. Transform Augmented Matrix (A) 
+   to Diagonal Matrix by Row Operations.
+
+5. Obtain Solution by Making All Diagonal Elements to 1.
+
+6. Display Result.
+
+7. Stop

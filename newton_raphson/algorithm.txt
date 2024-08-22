@@ -1,0 +1,27 @@
+1. Start
+
+2. Define function as f(x)
+
+3. Define first derivative of f(x) as g(x)
+
+4. Input initial guess (x0), tolerable error (e) 
+   and maximum iteration (N)
+
+5. Initialize iteration counter i = 1
+
+6. If g(x0) = 0 then print "Mathematical Error" 
+   and goto (12) otherwise goto (7) 
+
+7. Calcualte x1 = x0 - f(x0) / g(x0)
+
+8. Increment iteration counter i = i + 1
+
+9. If i >= N then print "Not Convergent" 
+   and goto (12) otherwise goto (10) 7
+
+10. If |f(x1)| > e then set x0 = x1 
+    and goto (6) otherwise goto (11)
+
+11. Print root as x1
+
+12. Stop

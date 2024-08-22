@@ -1,0 +1,57 @@
+1. Start
+
+2. Input the Augmented Coefficients Matrix (A):
+	
+	For i = 1 to n 
+		For j = 1 to n+1 
+			Read Ai,j 
+		Next j 
+	Next i
+
+3. Apply Gauss Jordan Elimination on Matrix A:
+	
+	For i = 1 to n
+		
+		If Ai,i = 0
+			
+			Print "Mathematical Error!"
+			Stop
+		
+		End If
+		
+		For j = 1 to n
+			
+			If i ≠ j 
+				
+				Ratio = Aj,i/Ai,i
+				
+				For k = 1 to n+1
+				
+					Aj,k = Aj,k - Ratio * Ai,k
+			
+				Next k
+				
+			End If
+			
+		Next j
+	Next i
+
+4. Obtaining Solution:
+	
+	For i = 1 to n 
+		Xi = Ai,n+1/Ai,i
+	Next i
+
+5. Display Solution:
+	
+	For i = 1 to n
+		
+		Print Xi
+	
+	Next i
+
+6. Stop
+
+
+---------------
+Note: All array indexes are assumed to start from 1.

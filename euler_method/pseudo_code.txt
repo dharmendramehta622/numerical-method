@@ -1,0 +1,24 @@
+1. Start
+
+2. Define function f(x,y)
+
+3. Read values of initial condition(x0 and y0), 
+   number of steps (n) and calculation point (xn)
+   
+4. Calculate step size (h) = (xn - x0)/n
+
+5. Set i=0
+
+6. Loop 
+      
+      yn = y0 + h *  f(x0 + i*h, y0)
+      
+      y0 = yn
+      
+      i = i + 1
+
+   While i < n
+
+7. Display yn as result
+
+8. Stop

@@ -1,0 +1,67 @@
+1. Start
+
+2. Input the Augmented Coefficients Matrix (A):
+	
+	For i = 1 to n
+		
+		For j = 1 to n+1
+			
+			Read Ai,j
+		
+		Next j
+	
+	Next i
+
+3. Apply Gauss Elimination on Matrix A:
+	
+	For i = 1 to n-1
+		
+		If Ai,i = 0
+			
+			Print "Mathematical Error!"
+			Stop
+		
+		End If
+		
+		For j = i+1 to n
+			
+			Ratio = Aj,i/Ai,i
+			
+			For k = 1 to n+1
+				
+				Aj,k = Aj,k - Ratio * Ai,k
+			
+			Next k
+		Next j
+	Next i
+
+4. Obtaining Solution by Back Substitution:
+	
+	Xn = An,n+1/An,n
+	
+	For i = n-1 to 1 (Step: -1)
+		
+		Xi = Ai,n+1
+		
+		For j = i+1 to n
+			
+			Xi = Xi - Ai,j * Xj
+		
+		Next j
+		
+		Xi = Xi/Ai,i
+	Next i
+
+5. Display Solution:
+	
+	For i = 1 to n
+		
+		Print Xi
+	
+	Next i
+
+6. Stop
+
+
+---------------
+Note: All array indexes are assumed to start from 1.
