@@ -20,7 +20,7 @@ int main() {
     int step = 1, N;
      
     std::cout << "/* Setting precision and writing floating point values in fixed-point notation. */" << std::endl;
-    std::cout << setprecision(6) << std::endl;
+    std::cout << setprecision(6) << fixed << std::endl;
     
  
     /*Inputs */
