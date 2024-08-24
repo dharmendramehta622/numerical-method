@@ -1,0 +1,35 @@
+Linear Interpolation Method Algorithm
+In some problems of science and engineering, we need to find the value of dependent variable corresponding to some value of independent variable by analyzing data which are obtained from some observation. For example, suppose we have following sets of data tabulated for x (independent variable) and y (dependent variable) :
+
+----------------------------------------
+| x: | x0 | x1 | x2 | x3 | ... | xn |
+-----------------------------------
+| y: | y0 | y1 | y2 | y3 | ... | yn |
+----------------------------------------
+To interpolate value of dependent variable y at some point of independent variable x using Linear Interpolation, we take two points i.e. if we need to interpolate y corresponding to x which lies between x0 and x1 then we take two points [x0, y0] and [x1, y1] and constructs Linear Interpolants which is the straight line between these points i.e.
+
+y - y0 = ((y1 - y0)/(x1 - x0)) * (x - x0)
+And if value of y is need to be obtained then using above equation we calculate yp at x = xp as:
+
+yp = y0 + ((y1 - y0)/(x1 - x0)) * (xp - x0)
+Similarly, if we need to interpolate y corresponding to x which lies between x1 and x2 then we take two points [x1, y1] and [x2, y2] and constructs Linear Interpolants which is the straight line between these points i.e.
+
+y - y1 = ((y2 - y1)/(x2 - x1)) * (x - x1)
+And if value of y is need to be obtained then using above equation we calculate yp at x = xp as:
+
+yp = y1 + ((y2 - y1)/(x2 - x1)) * (xp - x1)
+And we repeat the same procedure for other points.
+
+Algorithm For Linear Interpolation Method
+1. Start
+
+2. Read data points (x0, y0) and (x1, y1)
+
+3. Read value of independent variables say xp
+   whose corresponding value of dependent say yp is to be determined.
+   
+4. Calculate yp = y0 + ((y1 - y0)/(x1 - x0)) * (x - x0)
+
+5. Display value of yp as interpolated value.
+
+6. Stop

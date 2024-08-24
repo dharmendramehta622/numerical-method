@@ -1,0 +1,15 @@
+Linear Interpolation Method Pseudocode
+In Linear Interpolation Method Algorithm we discussed about an algorithm for interpolation using Linear interpolation Method. In this article we are going to develop pseudocode for Linear Interpolation Method so that it will be easy while implementing this method using high level programming languages.
+
+Pseudocode for Linear Interpolation Method
+1. Start
+
+2. Input: (x0, y0) and (x1, y1)
+
+3. Input xp
+   
+4. yp = y0 + ((y1 - y0)/(x1 - x0)) * (x - x0)
+
+5. Print yp
+
+6. Stop

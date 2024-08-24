@@ -1,11 +1,19 @@
+Gauss Jordan Method Pseudocode
+Earlier in Gauss Jordan Method Algorithm, we discussed about an algorithm for solving systems of linear equation having n unknowns. In this tutorial we are going to develop pseudocode for this method so that it will be easy while implementing using programming language.
+
+Pseudocode for Gauss Jordan Method
 1. Start
 
 2. Input the Augmented Coefficients Matrix (A):
 	
-	For i = 1 to n 
-		For j = 1 to n+1 
-			Read Ai,j 
-		Next j 
+	For i = 1 to n
+		
+		For j = 1 to n+1
+			
+			Read Ai,j
+		
+		Next j
+	
 	Next i
 
 3. Apply Gauss Jordan Elimination on Matrix A:

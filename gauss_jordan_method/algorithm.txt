@@ -1,3 +1,7 @@
+Gauss Jordan Method Algorithm
+In linear algebra, Gauss Jordan Method is a procedure for solving systems of linear equation. It is also known as Row Reduction Technique. In this method, the problem of systems of linear equation having n unknown variables, matrix having rows n and columns n+1 is formed. This matrix is also known as Augmented Matrix. After forming n x n+1 matrix, matrix is transformed to diagonal matrix by row operations. Finally result is obtained by making all diagonal element to 1 i.e. identity matrix.
+
+Algorithm for Gauss Jordan Method
 1. Start
 
 2. Read Number of Unknowns: n
