@@ -1,0 +1,39 @@
+Gauss Seidel Iteration Method Algorithm
+Gauss Seidel method is iterative approach for solving system of linear equations. In this method, first given system of linear equations are arranged in diagonally dominant form. For guaranteed convergence, system must be in Diagonally Dominant Form. In this article, we are going to develop algorithm for Gauss Seidel method.
+
+Gauss Seidel Iterative Method Algorithm
+1. Start
+
+
+2. Arrange given system of linear equations in 
+   diagonally dominant form
+
+
+3. Read tolerable error (e)
+
+
+4. Convert the first equation in terms of first variable, 
+second equation in terms of second variable and so on. 
+
+
+5. Set initial guesses for x0,  y0, z0 and so on
+
+
+6. Substitute value of y0, z0 ... from step 5 in 
+   first equation obtained from step 4 to calculate 
+   new value of x1. Use x1, z0, u0 .... in second equation 
+   obtained from step 4 to caluclate new value of y1. 
+   Similarly, use x1, y1, u0... to find new z1 and so on.  
+
+
+7. If| x0 - x1| > e and | y0 - y1| > e and | z0 - z1|  > e 
+   and so on then goto step 9
+
+
+8. Set x0=x1, y0=y1, z0=z1 and so on and goto step 6
+
+
+9. Print value of x1, y1, z1 and so on
+
+
+10. Stop
