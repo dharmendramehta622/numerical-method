@@ -1,0 +1,34 @@
+Numerical Integration Using Trapezoidal Method Algorithm
+In numerical analysis, Trapezoidal method is a technique for evaluating definite integral. This method is also known as Trapezoidal rule or Trapezium rule.
+
+This method is based on Newton's Cote Quadrature Formula and Trapezoidal rule is obtained when we put value of n = 1 in this formula.
+
+In this article, we are going to develop an algorithm for Trapezoidal method.
+
+Trapezoidal Method Algorithm
+1. Start
+
+2. Define function f(x)
+
+3. Read lower limit of integration, upper limit of 
+   integration and number of sub interval
+
+4. Calcultae: step size = (upper limit - lower limit)/number of sub interval
+
+5. Set: integration value = f(lower limit) + f(upper limit)
+
+6. Set: i = 1
+
+7. If i > number of sub interval then goto 
+
+8. Calculate: k = lower limit + i * h
+
+9. Calculate: Integration value = Integration Value + 2* f(k)
+
+10. Increment i by 1 i.e. i = i+1 and go to step 7
+
+11. Calculate: Integration value = Integration value * step size/2 
+
+12. Display Integration value as required answer
+
+13. Stop 

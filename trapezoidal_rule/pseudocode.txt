@@ -1,0 +1,40 @@
+Numerical Integration Using Trapezoidal Method Pseudocode
+In article Numerical Integration Using Trapezoidal Method Algorithm, we discussed about an algorithm of Trapezoidal Method for evaluating definite integral.
+
+Now we're going to implement pseudocode for this method so that it will be easy while implementing using programming language.
+
+Trapezoidal Method Pseudocode
+1. Start
+
+
+2. Define Function f(x)
+
+
+3. Input lower_limt, upper_limit, sub_interval
+
+
+4. Calculate: step_size = (lower_limit - upper_limit)/sub_interval
+
+
+5. Calculate: integration = f(lower_limit) + f(upper_limit)  
+
+
+6. Set: i=1
+
+
+7. Loop 
+        
+        k= lower_limit + i * step_size 
+        integration =  integration + 2*f(k)
+        i = i+1
+        
+   While i<= sub_interval
+
+
+8. integration = integration * step_size/2
+
+
+9. Print intgertaion as result
+
+
+10. Stop 
