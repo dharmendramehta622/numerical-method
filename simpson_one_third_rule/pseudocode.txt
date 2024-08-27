@@ -1,0 +1,43 @@
+Numerical Integration Using Simpson 1/3 Method Pseudocode
+In article Simpson 1/3 Rule (Method) Algorithm, we discussed about an algorithm of Simpson 1/3 Rule (Method) for approximating definite integral of a continuous function. Now we're going to develop pseudocode for this method so that it will be easy while implementing using programming languages like C, C++, Matlab, Python.
+
+Simpson's 1/3 Rule Pseudocode
+1. Start
+
+
+2. Define Function f(x)
+
+
+3. Input lower_limt, upper_limit, sub_interval
+
+
+4. Calculate: step_size = (lower_limit - upper_limit)/sub_interval
+
+
+5. Calculate: integration = f(lower_limit) + f(upper_limit)  
+
+
+6. Set: i=1
+
+
+7. Loop 
+        k= lower_limit + i * step_size 
+        
+        If i mod 2 = 0
+        	integration =  integration + 2 * f(k)
+        Else
+        	integration =  integration + 4 * f(k)
+        End If
+        
+        i = i+1
+        
+   While i<= sub_interval
+
+
+8. integration = integration * step_size/3
+
+
+9. Print intgertaion as result
+
+
+10. Stop 
