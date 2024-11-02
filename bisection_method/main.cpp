@@ -31,7 +31,7 @@ up:
     f0 = f(x0);
     f1 = f(x1);
 
-    if (f0 * f1 < 0.0)
+    if (f0 * f1 > 0.0)
     {
         std::cout << "Incorrect initial guess." << std::endl;
         goto up;
