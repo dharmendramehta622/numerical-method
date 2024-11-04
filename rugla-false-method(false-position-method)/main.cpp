@@ -18,7 +18,7 @@ int main()
 	 int step = 1;
 
 	 /* Setting precision and writing floating point values in fixed-point notation. */
-        std::cout<< setprecision(6)<< fixed << std::endl;
+        std::cout << setprecision(6) << fixed << std::endl;
 
 	 /* Inputs */
 	 up:
@@ -36,7 +36,7 @@ int main()
 	 /* Checking whether given guesses brackets the root or not. */
 	 if( f0 * f1 > 0.0)
 	 {
-		  std::cout<<"Incorrect Initial Guesses."<< std::endl;
+		  std::cout << "Incorrect Initial Guesses." << std::endl;
 		  goto up;
 	 }
 	 /* Implementing False Position Method */
