@@ -18,16 +18,16 @@ int main()
 	 int step = 1;
 
 	 /* Setting precision and writing floating point values in fixed-point notation. */
-     cout<< setprecision(6)<< fixed;
+        std::cout<< setprecision(6)<< fixed << std::endl;
 
 	 /* Inputs */
 	 up:
-	 cout<<"Enter first guess: ";
-     cin>>x0;
-     cout<<"Enter second guess: ";
-     cin>>x1;
-     cout<<"Enter tolerable error: ";
-     cin>>e;
+	     std::cout << "Enter first guess: " << std::endl;
+	     cin >> x0;
+	     std::cout <<"Enter second guess: " << std::endl;
+	     cin>>x1;
+	     std::cout<<"Enter tolerable error: "<< std::endl;
+	     cin>>e;
 
 	 /* Calculating Functional Value */
 	 f0 = f(x0);
@@ -36,13 +36,13 @@ int main()
 	 /* Checking whether given guesses brackets the root or not. */
 	 if( f0 * f1 > 0.0)
 	 {
-		  cout<<"Incorrect Initial Guesses."<< endl;
+		  std::cout<<"Incorrect Initial Guesses."<< std::endl;
 		  goto up;
 	 }
-   /* Implementing False Position Method */
-     cout<< endl<<"*********************"<< endl;
-	 cout<<"False Position Method"<< endl;
-	 cout<<"*********************"<< endl;
+	 /* Implementing False Position Method */
+	 std::cout << "*********************" << std::endl;
+	 std::cout << "False Position Method" << std::endl;
+	 std::cout << "*********************" << std::endl;
 	 do
 	 {
 		  /* Applying False Position Method */
@@ -50,7 +50,7 @@ int main()
 		  x = x0 - (x0-x1) * f0/ (f0-f1);
 		  f = f(x);
 
-		  cout<<"Iteration-"<< step<<":\t x = "<< setw(10)<< x<<" and f(x) = "<< setw(10)<< f(x)<< endl;
+		  std::cout << "Iteration-" << step << ":\t x = " << setw(10)<< x << " and f(x) = " << setw(10) << f(x) << std::endl;
 
 		  if( f0 * f < 0)
 		  {
@@ -65,7 +65,6 @@ int main()
 		  step = step + 1;
 	 }while(fabs(f)>e);
 
-	 cout<< endl<<"Root is: "<< x<< endl;
-
+	 std::cout << "Root is: " << x << std::endl;
 	 return 0;
 }
