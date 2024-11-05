@@ -67,5 +67,5 @@ int main() {
 
   }while (fabs(f2) > e);
   
-
+ std::cout << "Root is: " << x2 << std:endl;
 }
