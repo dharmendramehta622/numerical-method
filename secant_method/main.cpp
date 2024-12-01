@@ -65,11 +65,7 @@ int main()
       exit(0);
     }
 
-  }while (fabs(f2) > e);
-  
- std::cout << "Root is: " << x2 << std:endl;
-  } while (fabs(f2) > e);
-
+  }while (fabs(f2) > e); 
   std::cout << "Root is: " << x2 << std::endl;
   return 0;
 }
