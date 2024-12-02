@@ -12,33 +12,33 @@ int main(){
     float x0, y0, xn, h, yn, slope;
     int i, n;
 
-    cout << "Enter initial condition" << endl;
-    cout << "x0 = ";
+    std::cout << "Enter initial condition" << endl;
+    std::cout << "x0 = ";
     cin >> x0;
-    cout << "y0 = ";
+    std::cout << "y0 = ";
     cin >> y0;
-    cout << "Enter calculation point xn = ";
+    std::cout << "Enter calculation point xn = ";
     cin >> xn;
-    cout << "Enter number of steps: ";
+    std::cout << "Enter number of steps: ";
     cin >> n;
 
     /* Calculating step size(h) */
     h = (xn - x0) / n;
 
     /* Euler's Method */
-    cout << "\nx0\ty0\tslope\tyn\n";
-    cout << "-----------------------\n";
+    std::cout << "\nx0\ty0\tslope\tyn\n";
+    std::cout << "-----------------------\n";
     
     for (i = 0; i < n;i++){
         slope = f(x0, y0);
         yn = y0 + h * slope;
-        cout << x0 << "\t" << y0 << "\t" << slope << "\t" << yn << endl;
+        std::cout << x0 << "\t" << y0 << "\t" << slope << "\t" << yn << endl;
         y0 = yn;
         x0 = x0 + h;
     }
 
     /* Displaying result */
-    cout << "\nValue of y at x = " << xn << " is " << yn;
+    std::cout << "\nValue of y at x = " << xn << " is " << yn;
 
     return 0;
 }
